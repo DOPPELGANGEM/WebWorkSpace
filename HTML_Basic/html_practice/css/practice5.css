@@ -1,0 +1,17 @@
+#shopping { list-style-type:none; padding-left:10px; }
+li { margin:10px; }
+input[type=text], input[type=email], input[type=tel] { width:300px; }
+#shopping label { width:80px; }
+p { font-weight:bolder; }
+fieldset legend { font-weight:bold; }
+
+
+
+
+
+
+
+
+
+
+
