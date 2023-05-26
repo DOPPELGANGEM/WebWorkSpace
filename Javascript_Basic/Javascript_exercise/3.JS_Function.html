@@ -41,9 +41,35 @@
     <h4>
       익명함수를 매개변수로 활용 <br>함수도 하나의 자료형이기 때문에 매개변수로도 전달 가능함.
     </h4>
+    <p id="p6" style="height:230px"></p>
+    <h3>익명함수를 리턴하는 함수</h3>
+    <input type="text" name="name" id="name">
+    <button onclick="jsReturnFunc();">실행확인</button>
+    <p id="p7"></p>
+
     <script> 
       // 매개변수(parameter)란 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수를 의미합니다.
       // 인수(argument)란 함수가 호출될 때 함수로 값을 전달해주는 값을 말합니다.
+
+      var jsReturnFunc = function(){
+        var nameTag = document.querySelector('#name');
+        var pTag = document.getElementById('p7');
+        return function(){
+          pTag.innerHTML = nameTag.value;
+        }();
+      }
+
+      callFuncTenTimes(calleeFunc);
+      function callFuncTenTimes(otherFunc){
+        for(var i = 0; i < 10; i++){
+          otherFunc(i); // 받아서 실행하는 함수 콜백함수 => AJAX에서 활용이됨
+        }
+      }
+
+      function calleeFunc(num){
+        var pTag = document.querySelector('#p6');
+        pTag.innerHTML += (num + 1) + "번째 함수 호출 완료<br>";
+      }
 
       /* var num1 = prompt("수를입력하세요.");
       var num2 = prompt("수를입력하세요.");

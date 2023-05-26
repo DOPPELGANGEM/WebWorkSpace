@@ -47,20 +47,23 @@
     </table>
     </p>
     <script>
-      /* console.log(inputName); */
-
       function addUser(){
-        var inputName = document.querySelector('#name');
-        var inputAge = document.querySelector('#age');
-        /* var inputGender = document.querySelector("'input:radio[name:gender]:input[value]='M'"); */
-        var inputPhone = document.querySelector('#phone');
-        /* var inputHobby = document.querySelector("'input:checkbox[name:hobby]:input[value]='movie'"); */
-
-        inputName.innerHTML = inputName.value;
-        console.log(inputName);
+        var nameVal = document.querySelector('#name').value;
+        var ageVal = document.querySelector('#age').value;
+        // doucment.getElementById("age");
+        // document.querySelectorAll("[name=gender]");
+        // document.getElementsByTagName("gender");
+        var phoneVal = document.querySelector('#phone').value;
+        // document.querySelectorAll('[name=hobby]');
+        var tableTag = document.getElementById('tbl');
+        // document.querySelector('#tbl');
+        tableTag.innerHTML += "<tr><td>" + nameVal + "</td><td>"+ ageVal + "</td><td>성별</td><td>" + phoneVal + "</td><td>취미</td></tr>";
       }
 
-
+      //1. 성별 선택한 값 가져오기
+      //2. 취미 선택한 값 가져오기
+      //3. 입력한 값 리셋하기
+      //4. 입력하지 않았으면 추가하지 않기
 
     </script>
   </body>
