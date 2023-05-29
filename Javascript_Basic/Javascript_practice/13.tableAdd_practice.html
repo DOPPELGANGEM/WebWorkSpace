@@ -32,8 +32,9 @@
       <input type="checkbox" name="hobby" value="reading" id="reading"><label for="reading"> 독서 </label>
       <input type="checkbox" name="hobby" value="climb" id="climb"><label for="climb"> 등산 </label>
       <br>
-      <input type="button" value="추가하기" onclick="addUser();">
     </form>
+    <input type="button" value="추가하기" onclick="addUser();">
+    <input type="button" value="초기화" onclick="resetData();">
     <p id="p3">
     <table id="tbl" width="500px" border="1" cellspacing="0">
         <tr>
@@ -47,24 +48,129 @@
     </table>
     </p>
     <script>
+      function resetData(){
+        document.querySelector("#name").value = "";
+        document.querySelector("#age").value = "";
+        // 라디오 버튼 초기화
+        for(var e = 0; e < 2; e++) {
+          // var genderTag = document.querySelectorAll("[name=gender]")
+          // if(genderTag.checked){
+          //   genderTag.checked = false;
+          // }
+          document.querySelectorAll("[name=gender]")[e].checked = false;
+        }
+        document.querySelector("#phone").value = "";
+        // 체크박스 초기화
+        for(var j = 0; j < 5; j++){
+          document.querySelectorAll("[name=hobby]")[j].checked = false;
+        }
+      }
+
       function addUser(){
         var nameVal = document.querySelector('#name').value;
         var ageVal = document.querySelector('#age').value;
-        // doucment.getElementById("age");
-        // document.querySelectorAll("[name=gender]");
-        // document.getElementsByTagName("gender");
+        var genderTag = document.querySelectorAll("[name=gender]");
         var phoneVal = document.querySelector('#phone').value;
-        // document.querySelectorAll('[name=hobby]');
+        var hobbyTag = document.querySelectorAll('[name=hobby]');
+
+        if(nameVal == ""){
+          alert("이름을 입력해주세요");
+          return;
+        }
+        if(ageVal == ""){
+          alert("나이를 입력해주세요");
+          return;
+        }
+        if(!genderTag[0].checked && !genderTag[1].checked){
+          alert("성별을 선택해주세요");
+          return;
+        }
+        if(phoneVal == ""){
+          alert("전화번호를 입력해주세요");
+          return;
+        }
+        // 취미는 한개 이상 선택하기!!
+        var count = 0;
+        for(var k = 0; k < 5; k++){
+          if(hobbyTag[k].checked) {
+            count++;
+          }
+        }
+
+        if(count == 0) {
+          alert("적어도 한개 이상 선택해주세요!");
+          return;
+        }
+        // if(!hobbyTag[0].checked 
+        //     && !hobbyTag[1].checked 
+        //     && !hobbyTag[2].checked 
+        //     && !hobbyTag[3].checked 
+        //     && !hobbyTag[4].checked){
+        //   alert("적어도 한개 이상 선택해주세요!");
+        //   return;
+        // }
+
+        // doucment.getElementById("age");
+        var genderVal = "";
+        if(genderTag[0].checked) {
+          genderVal = "남";
+        } else if(genderTag[1].checked){
+          genderVal = "여";
+        }
+        // document.getElementsByTagName("gender");
+        var hobbyVal = "";
+
+        // 1. else if 하면 조건이 참이면 뒤에 값은 보지도 않느다.
+        // 2. if문으로 여러개 적어야만 모두 동작된다(누적가능)
+        // 3. 0으로 시작해서 1씩증가하면서 반복(반복문으로 가능)
+        // 4. 영문으로 나오는 값을 nextSibling 이용해서 한글 나타냄
+
+        for (var i = 0; i < 5; i++) {
+          if(hobbyTag[i].checked) {
+            // hobbyVal += hobbyTag[i].value + ", ";
+            var hobbyKor = hobbyTag[i].nextSibling.innerText; //nextSibling  ex)댓글달때
+            hobbyVal += hobbyKor.trim() +", "; //공백제거
+          }
+        }
+        /* if(hobbyTag[0].checked) {
+          var hobbyVal = "영화보기";
+        } if(genderTag[1].checked){
+          var hobbyVal = "음악듣기 ";
+        } if(genderTag[2].checked){
+          var hobbyVal = "운동";
+        } if(genderTag[3].checked){
+          var hobbyVal = "독서";
+        } if(genderTag[4].checked){
+          var hobbyVal = "등산";
+        } */
+
         var tableTag = document.getElementById('tbl');
         // document.querySelector('#tbl');
-        tableTag.innerHTML += "<tr><td>" + nameVal + "</td><td>"+ ageVal + "</td><td>성별</td><td>" + phoneVal + "</td><td>취미</td></tr>";
+        tableTag.innerHTML += "<tr><td>" + nameVal + "</td><td>"+ ageVal + "</td><td>" + genderVal + "</td><td>" + phoneVal + "</td><td>" + hobbyVal + "</td></tr>";
+
+        document.querySelector("#name").value = "";
+        document.querySelector("#age").value = "";
+        // 라디오 버튼 초기화
+        for(var e = 0; e < 2; e++) {
+          // var genderTag = document.querySelectorAll("[name=gender]")
+          // if(genderTag.checked){
+          //   genderTag.checked = false;
+          // }
+          document.querySelectorAll("[name=gender]")[e].checked = false;
+        }
+        document.querySelector("#phone").value = "";
+        // 체크박스 초기화
+        for(var j = 0; j < 5; j++){
+          document.querySelectorAll("[name=hobby]")[j].checked = false;
+        }
+
+        resetData();
+        //1. 성별 선택한 값 가져오기
+        //2. 취미 선택한 값 가져오기
+        //3. 입력한 값 리셋하기
+        //4. 입력하지 않았으면 추가하지 않기
       }
-
-      //1. 성별 선택한 값 가져오기
-      //2. 취미 선택한 값 가져오기
-      //3. 입력한 값 리셋하기
-      //4. 입력하지 않았으면 추가하지 않기
-
+      
     </script>
   </body>
 </html>
