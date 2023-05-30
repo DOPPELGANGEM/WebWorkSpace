@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팩토리열 계산</title>
+    <style>
+      body { text-align: center; padding-top:20px; }
+    </style>
+  </head>
+  <body>
+    <h1>while 문을 사용한 팩토리얼 계산</h1>
+    <script>
+      //창떠서 입력받음
+      var num = prompt("숫자를 입력하세요", "10");
+
+      // 5! = 1*2*3*4*5
+      /* var nFact = 1;
+      for(var i = 1; i <= num; i++) {
+        nFact = nFact * i;
+      }
+      document.write(num + "!의 값 : " + nFact); */
+
+      if(num !== null) {
+        var nFact = 1;
+        var i = 1 // for문의 초기값
+        var msg = ''; // 모델방식, 코드를줄여줌
+        while(i <= num) {
+          nFact = nFact * i;
+          i++;
+        }
+        msg = num + "!의 값 : " + nFact;
+      } else {
+        msg = "값을 입력하지 않았습니다.";
+      }
+      document.write(msg);
+      
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력한 값 출력하기</title>
+    <style>
+        #area {width: 400px; height: 150px; background: #ffff99; border: 1px solid #6666ff; }
+    </style>
+    </head>
+    <body>
+      <h2>입력한 값 출력 문제</h2>
+      <label>구매자 : </label>
+      <input type="text" placeholder="구매자의 이름을 입력하세요.">
+      <br>
+      <br>
+      <label>상품명 : </label>
+      <input type="text" id="pname" placeholder="구매 상품명을 입력하세요">
+      <br>
+      <br>
+      <label>가격 : </label>
+      <input type="text" name="price" placeholder="구매 가격을 입력하세요.">
+      <br>
+      <br>
+      <button onclick="printValue();">입력값 출력하기</button>
+      <br>
+      <br>
+      <div id="area"></div>
+    <script>
+      function printValue(){
+        //입력한값 가져오기
+        var customerName = document.querySelector("[type=text]").value;
+        // document.getElementsByTagName("input")[0].value
+        var productName = document.querySelector("#pname").value;
+        // document.getElementsByTagName("pname").value
+        var price = document.querySelector("[name=price]").value;
+        // document.getElementsByTagName("price")[0].value
+
+        //출력한값 가져오기
+        console.log(customerName + "," + productName + ", " + price);
+        document.querySelector('#area').innerHTML += "구매자 : " + customerName + "<br>"; //+=누적 innerText가아닌 innerHTML을해야 태그값을가져옴
+        document.querySelector('#area').innerHTML += "상품명 : " + productName + "<br>";
+        document.querySelector('#area').innerHTML += "가격 : " + price + "<br>";
+      
+      }
+
+    </script>
+  </body>
+</html>

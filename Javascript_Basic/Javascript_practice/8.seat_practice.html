@@ -36,7 +36,7 @@
         var customer = prompt("입장객은 몇 명인가요?");
         var colNum = prompt("한 줄에 몇 명씩 앉습니까?");
         /* alert(parseInt(customer/colNum)); */
-        var rowNum = parseInt(customer / colNum) + 1; // 30/5 = 6, 20/4 = 5 => 문자열문자열나눠서 형변환이나서 parseint안해도됨
+        var rowNum = parseInt(customer / colNum) + 1; // 43/5 = 8 + 1 -> 소수점없애려고 이코드
         var count = 1;
 
         document.write("<table border='1'>");
@@ -44,10 +44,12 @@
           document.write("<tr>");
           for(var j = 1; j <= colNum; j++){
             if(count > customer) {
-              break;
+              break; // 정원보다많으면 나오게하는 코드
             }
             document.write("<td>좌석" + count + "</td>");
             count++;
+            //count = count + 1;
+            //count += 1;
           }
           document.write("</tr>");
         }
