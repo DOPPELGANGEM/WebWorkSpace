@@ -32,10 +32,237 @@
   <p>처음 객체 생성 이후 키, 값을 추가하거나 제거하는 것을 동적으로 할 수 있음.</p>
   <button id="btn5">실행확인</button>
   <div id="area5" class="area"></div>
-  <style>
-
-  </style>
+  <h3>객체의 in과 with 키워드</h3>
+  <p>
+    in : 객체 내부에 해당 속성이 있는지 확인하는 키워드
+    <br>
+    with : 호출시 코드를 줄여주는 키워드(객체명 생략가능)
+  </p>
+  <label>이름 : <input type="text" id="name"></label><br>
+  <label>국어 : <input type="text" id="kor"></label><br>
+  <label>영어 : <input type="text" id="eng"></label><br>
+  <label>수학 : <input type="text" id="math"></label><br>
+  <button onclick="jsobject6();">실행확인</button>
+  <div id="area6" class="area-big"></div>
+  
   <script>
+    /* //방법1
+    if(nameVal == "") {
+      alert("이름을 입력해주세요.");
+      return false;
+    }
+    if(korVal == 0) {
+      alert("국어를 입력해주세요.");
+      return false;
+    }
+    if(engVal == 0) {
+      alert("영어를 입력해주세요.");
+      return false;
+    }
+    if(mathVal == 0) {
+      alert("수학를 입력해주세요.");
+      return false;
+    }
+
+    //방법2
+    if(nameVal == "") {
+      alert("이름을 입력해주세요.");
+      return false;
+    }
+
+    var scoreCheck = {
+      "kor" : korVal,
+      "eng" : engVal,
+      "math" : mathVal
+    }
+    for(var keyword in scoreCheck) {
+      if(scoreCheck[keyword] == 0) {
+        alert(keyword + "를 입력하세요.");
+        return false;
+      }
+    }
+
+    //방법3
+    if(nameVal && korVal && engVal && mathVal) {
+      var student = {
+        "name" : nameVal,
+        "kor" : korVal,
+        "eng" : engVal,
+        "math" : mathVal,
+        "total" : totalVal,
+        "avg" : avgVal
+      }
+      with(student) {
+        div6Tag.innerHTML += "이름 : " + name +"<br>";
+        div6Tag.innerHTML += "국어 : " + kor +"<br>";
+        div6Tag.innerHTML += "영어 : " + eng +"<br>";
+        div6Tag.innerHTML += "수학 : " + math +"<br>";
+        div6Tag.innerHTML += "총점 : " + total +"<br>";
+        div6Tag.innerHTML += "평균 : " + avg +"<br>";
+      }
+    }else {
+      alert("값이 모두 입력되지 않았습니다.");
+    } */
+
+    // var student = null;
+    function jsobject6() {
+      var nameVal = document.querySelector('#name').value;
+      // parseInt도 가능!!
+      var korVal = Number(document.querySelector('#kor').value);
+      var engVal = Number(document.querySelector('#eng').value);
+      var mathVal = Number(document.querySelector('#math').value);
+      var div6Tag = document.querySelector('#area6');
+      var totalVal = korVal + engVal + mathVal;
+      var avgVal = totalVal / 3;
+
+      /* if (nameVal != "" && korVal != 0 && engVal != 0 && mathVal != 0) { //1개라도 비어있으면 null이되서 else문 값이 모두 입력되지 않았습니다. 실행
+        student = { 
+          'name' : nameVal,
+          'kor' : korVal,
+          'eng' : engVal,
+          'math' : mathVal,
+          'total' : totalVal,
+          'avg' : avgVal
+        }
+      }
+
+      if(student != null){
+        with(student){
+          div6Tag.innerHTML += "이름 : " + name + "<br>";
+          div6Tag.innerHTML += "국어 : " + kor + "<br>";
+          div6Tag.innerHTML += "영어 : " + eng + "<br>";
+          div6Tag.innerHTML += "수학 : " + math + "<br>";
+          div6Tag.innerHTML += "총점 : " + total + "<br>";
+          div6Tag.innerHTML += "평균 : " + avg + "<br>";
+        }
+        student = null; // 반복동작하기위해서
+      } else {
+        alert("값이 모두 입력되지 않았습니다.");
+      }
+
+      if (nameVal != "" && korVal != 0 && engVal != 0 && mathVal != 0) { //1개라도 비어있으면 null이되서 else문 값이 모두 입력되지 않았습니다. 실행
+        student = { 
+          'name' : nameVal,
+          'kor' : korVal,
+          'eng' : engVal,
+          'math' : mathVal,
+          'total' : totalVal,
+          'avg' : avgVal
+        }
+      } */
+
+      if (nameVal != "" && korVal && engVal  && mathVal) { //1개라도 비어있으면 null이되서 else문 값이 모두 입력되지 않았습니다. 실행
+        var student = { 
+          'name' : nameVal,
+          'kor' : korVal,
+          'eng' : engVal,
+          'math' : mathVal,
+          'total' : totalVal,
+          'avg' : avgVal
+        }
+        with(student){
+          div6Tag.innerHTML += "이름 : " + name + "<br>";
+          div6Tag.innerHTML += "국어 : " + kor + "<br>";
+          div6Tag.innerHTML += "영어 : " + eng + "<br>";
+          div6Tag.innerHTML += "수학 : " + math + "<br>";
+          div6Tag.innerHTML += "총점 : " + total + "<br>";
+          div6Tag.innerHTML += "평균 : " + avg + "<br>";
+        }
+      } else {
+         alert("값이 모두 입력되지 않았습니다.");
+      }
+
+     
+
+     
+      // var student = new Object();  //이런방법도있음
+      // student['name'] = nameVal;
+      // student['kor'] = korVal;
+      // student['eng'] = engVal;
+      // student['math'] = mathVal;
+
+      // if(nameVal == "") {
+      //   alert("이름을 입력해주세요");
+      //   return false;
+      // }
+      // if(korVal == "") {
+      //   alert("국어를 입력해주세요");
+      //   return false;
+      // }
+      // if(engVal == "") {
+      //   alert("영어를 입력해주세요");
+      //   return false;
+      // }
+      // if(mathVal == "") {
+      //   alert("수학을 입력해주세요");
+      //   return false;
+      // }
+
+      /* if(nameVal == "") {
+        alert("이름을 입력해주세요");
+        return false;
+      }
+
+      var scoreCheck = {
+        'kor' : korVal,
+        'eng' : engVal,
+        'math' : mathVal
+      };
+
+      for(var keyword in scoreCheck) {
+        if(scoreCheck[keyword] == 0) {
+          alert(keyword + "를 입력하세요.");
+          return false;
+        }
+      } */
+
+      
+     /*  if(nameVal != "") { */
+          // null 이 아닌 상태로 만들기
+          // var student = { 
+          // 'name' : nameVal,
+          // 'kor' : korVal,
+          // 'eng' : engVal,
+          // 'math' : mathVal,
+          // 'total' : totalVal,
+          // 'avg' : avgVal
+          // }
+          // alert("이름을 입력해주세요.");
+          // return false;
+      /* } */
+      // student.total = totalVal;
+      // student.avg = totalVal;
+      /* if(student != null){ */
+        // with(student){
+        //   div6Tag.innerHTML += "이름 : " + name + "<br>";
+        //   div6Tag.innerHTML += "국어 : " + kor + "<br>";
+        //   div6Tag.innerHTML += "영어 : " + eng + "<br>";
+        //   div6Tag.innerHTML += "수학 : " + math + "<br>";
+        //   div6Tag.innerHTML += "총점 : " + total + "<br>";
+        //   div6Tag.innerHTML += "평균 : " + avg + "<br>";
+        // }
+        // student = null;
+      /* } */ /* else {
+        alert("값을 입력해주세요.");
+      } */
+
+      // div6Tag.innerHTML += "이름 : " + student.name + "<br>"; 
+      // div6Tag.innerHTML += "국어 : " + student.kor + "<br>";
+      // div6Tag.innerHTML += "영어 : " + student.eng + "<br>";
+      // div6Tag.innerHTML += "수학 : " + student.math + "<br>";
+      
+      // var student = new Object(); 
+      // student.name = nameVal;
+      // student.kor = korVal;
+      // student.eng = engVal;
+      // student.math = mathVal;
+
+      //in 키워드 : key값 존재 여부 true false 리턴
+      // console.log("name1" in student); // false
+      // console.log("korean" in student); // false
+      // console.log("eng" in student) // true
+    }
+
     document.querySelector('#btn5').onclick = function(){
       var person = {
         'name' : '일용자',

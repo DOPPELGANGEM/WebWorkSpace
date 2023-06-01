@@ -17,11 +17,12 @@
 			th, td {
 					height : 50px;
 			}
+			body { padding:0 0 500px; }
     </style>
 </head>
 <body>
 	<script>
-		var member;
+		var member = null; // var member="";
 		function insertMember(){
 			var name = prompt("이름을 입력하세요.");
 			var age = prompt("나이를 입력하세요.");
@@ -30,14 +31,73 @@
 			member = new Object();
 			member.name = name;
 			member.age = age;
-			member.address = address;
+			member.address = address;		
+			/* if(!member.name || !member.age || !member.address){
+				alert("값을 다시 입력해주세요.")
+			} */
 			//입력 끝
 		}
 
 		function printMember(){
-			document.querySelector('#print').innerHTML += "이름 : " + member.name + "<br>";
+			if(!member) {  //출력먼저하는사람
+				alert('입력버튼부터 눌러주세요.');
+				return false;
+			}
+
+			for (var key in member) { // 입력은 눌럿지만 아무것도 입력안한사람
+				if(!member[key]) {
+					alert('값을 모두 입력해주세요.');
+					return false;
+				}
+			}
+
+			var printTag = document.querySelector('#print');
+			with(member){
+				printTag.innerHTML += "이름 : " + member.name + "<br>";
+				printTag.innerHTML += "나이 : " + member.age + "<br>";
+				printTag.innerHTML += "주소 : " + member.address + "<br>";
+				//출력 끝
+			}
+			/* document.querySelector('#print').innerHTML += "이름 : " + member.name + "<br>";
 			document.querySelector('#print').innerHTML += "나이 : " + member.age + "<br>";
-			document.querySelector('#print').innerHTML += "주소 : " + member.address + "<br>";
+			document.querySelector('#print').innerHTML += "주소 : " + member.address + "<br>"; */
+		}
+
+		function student(){
+			/* prompt("1번째학생 이름 입력하세요.");
+			prompt("1번째학생 나이 입력하세요.");
+			prompt("1번째학생 주소 입력하세요.");
+			prompt("2번째학생 이름 입력하세요.");
+			prompt("2번째학생 나이 입력하세요.");
+			prompt("2번째학생 주소 입력하세요.");
+			prompt("3번째학생 이름 입력하세요.");
+			prompt("3번째학생 나이 입력하세요.");
+			prompt("3번째학생 주소 입력하세요."); */
+			var objArrs = new Array(); // [];
+			// 입력부분
+			for (var i = 0; i < 3; i++) {
+				var studentOne = {};
+				studentOne.name = prompt((i+1) + "번째학생 이름 입력하세요.");
+				studentOne.age = prompt((i+1) + "번째학생 나이 입력하세요.");
+				studentOne.addr = prompt((i+1) + "번째학생 주소 입력하세요.");
+				objArrs.push(studentOne);
+				/* document.querySelectorAll('[name=name]')[0].innerHTML = studentOne.name;
+				document.querySelectorAll('[name=age]')[0].innerHTML = studentOne.age;
+				document.querySelectorAll('[name=addr]')[0].innerHTML = studentOne.addr;
+				document.querySelectorAll('[name=name]')[1].innerHTML = studentOne.name;
+				document.querySelectorAll('[name=age]')[1].innerHTML = studentOne.age;
+				document.querySelectorAll('[name=addr]')[1].innerHTML = studentOne.addr;
+				document.querySelectorAll('[name=name]')[2].innerHTML = studentOne.name;
+				document.querySelectorAll('[name=age]')[2].innerHTML = studentOne.age;
+				document.querySelectorAll('[name=addr]')[2].innerHTML = studentOne.addr; */
+			}
+			// 출력부분 따로하기
+			for(var j = 0; j < objArrs.length; j++) {
+				document.querySelectorAll('[name=name]')[j].innerHTML = objArrs[j].name;
+				document.querySelectorAll('[name=age]')[j].innerHTML = objArrs[j].age;
+				document.querySelectorAll('[name=addr]')[j].innerHTML = objArrs[j].addr;
+			}
+			console.log(objArrs); // 객체 배열 확인
 		}
 
 	</script>
