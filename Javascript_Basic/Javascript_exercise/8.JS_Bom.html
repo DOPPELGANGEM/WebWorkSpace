@@ -42,22 +42,21 @@
     <button onclick="checkHistory()">history 실행 확인</button>
   </body>
   <script>
+    var clockObj = null;
     function startClock(){
-      var divTag = document.querySelector('#clockArea');
-      var times = new Date();
-      var hours = times.getHours();
-      var minutes = times.getMinutes();
-      var seconds = times.getSeconds();
-      
-      
-      divTag.innerText = hours + ':' + minutes + ":" + seconds;
-      console.log(divTag.innerText);
-      
-      
+      var clockArea = document.querySelector('#clockArea');
+      clockObj = window.setInterval(function(){
+        //동작할 코드 생성
+        var nowTime = new Date();
+        clockArea.innerText = nowTime.getHours() + " : " + nowTime.getMinutes() + " : " + nowTime.getSeconds();
+        // clockArea.innerText += nowTime.toLocaleTimeString();
+        // clockArea.innerText += nowTime.toLocalDateString();
+        // clockArea.innerText += nowTime.toLocalTimeString();
+      }, 1000);
     }
-
     function stopClock(){
-      
+      window.clearInterval(clockObj);
+      document.querySelector('#clockArea').innerText = "";
     }
 
     var checkInterval = null;
