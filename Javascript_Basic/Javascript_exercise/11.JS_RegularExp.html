@@ -65,7 +65,7 @@
       const btnExtra = document.querySelector('#btn-extra-btn');
       btnExtra.addEventListener('click',function(){
         const target = document.querySelector('#personal-number').value;
-        const regExp = /^\d{2}(0[1-9]|1[0-2])(0[1-9|1[0-9]|2[0-9]|3[0-1])-[1-4]\d{6}$/g; //https://rootable.tistory.com/646
+        const regExp = /^\d{2}(0[1-9]|1[0-2])(0[1-9|1[0-9]|2[0-9]|3[0-1])-[1-4]\d{6}$/g; //https://rootable.tistory.com/646 // 연 / 월 / 일 - [주민번호 뒷자리 첫번째 숫자는 1~4만 갖는다]\d{6} : 주민번호 첫자리를 제외한 숫자는 총 6자리다.
         if(!regExp.test(target)) {
           alert('입력오류!');
         } else {
