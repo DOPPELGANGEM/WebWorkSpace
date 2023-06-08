@@ -124,3 +124,26 @@
 <h2>0607</h2>
 <p>정규표현식 실습</p>
 <p>jquery</p>
+
+<h2>0608</h2>
+<p>jquery filtering 메소드</p>
+<p>jquery Ancestors 메소드</p>
+<p>jquery Descendants 메소드</p>
+<p>jquery Siblings 메소드</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
