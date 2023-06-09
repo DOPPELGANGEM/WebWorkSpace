@@ -33,12 +33,36 @@
           color = $('#img4').css('background-color');
         })
 
-        $('#1th').on('click', () =>{
-          $('#1th').css('background-color',color);
+        $('div[id$=th]').on('click', function(){
+          $(this).css('background-color',color);
         })
-        $('#2th').on('click', () =>{
-          $('#1th').css('background-color',color);
-        })
+
+        // for(let i = 1; i < 8; i++) {
+        //   $('#' + i + 'th').on('click', () =>{
+        //     $('#' + i + 'th').css('background-color',color);
+        //   })
+        // }
+
+        
+        // $('#2th').on('click', () =>{
+        //   $('#2th').css('background-color',color);
+        // })
+        // $('#3th').on('click', () =>{
+        //   $('#3th').css('background-color',color);
+        // })
+        // $('#4th').on('click', () =>{
+        //   $('#4th').css('background-color',color);
+        // })
+        // $('#5th').on('click', () =>{
+        //   $('#5th').css('background-color',color);
+        // })
+        // $('#6th').on('click', () =>{
+        //   $('#6th').css('background-color',color);
+        // })
+        // $('#7th').on('click', () =>{
+        //   $('#7th').css('background-color',color);
+        // })
+        
       })
     </script>
     문제3<br>

@@ -13,7 +13,24 @@
 </head>
 <body>
     <script>
-        
+      $(function(){
+        $('#btn').on('click', () => {
+          const trTags = $('tr');
+          let str = '';
+          $.each(trTags, (index, item) => {
+            if(index > 0) {
+              const tdTags = $(item).children();
+              const checkBox = tdTags.first().children();
+              if(checkBox.is(':checked')) {
+                str += tdTags.eq(1).text() + ', ' + tdTags.eq(2).text() + ', ' + tdTags.eq(3).text() + '<br>';
+              }
+            }
+          });
+          $('#result').html(str);
+        })
+      })
+
+      
     </script>
     <table>
         <tr>
