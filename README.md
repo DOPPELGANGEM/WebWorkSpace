@@ -134,9 +134,10 @@
 <p>jquery 실습문제</p>
 <p>1개월차 개인면담</p>
 
-
-
-
+<h2>0612</h2>
+<p>Oracle DB</p>
+<p>Insert Delete Update</p>
+<p>DDL(Data Definition Language) NOT NULL,UNIQUE, PRIMARY_KEY, FOREIGN KEY, CHECK</p>
 
 
 
