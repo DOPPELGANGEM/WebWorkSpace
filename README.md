@@ -139,10 +139,11 @@
 <p>Insert Delete Update</p>
 <p>DDL(Data Definition Language) NOT NULL,UNIQUE, PRIMARY_KEY, FOREIGN KEY, CHECK</p>
 
-
-
-
-
+<h2>0613</h2>
+<p>Foreignkey 실습</p>
+<p>DDL ALTER (오라클 객체)</p>
+<p>TCL (COMMIT, ROLLBACK, SAVEPOINT)</p>
+<p>DQL</p>
 
 
 
