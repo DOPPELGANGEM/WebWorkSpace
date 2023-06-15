@@ -150,12 +150,16 @@
 <p>오라클함수 실습</p>
 <p>자바 맛보기 replit.com</p>
 
-
-
-
-
-
-
-
+<h2>0615</h2>
+<p> 오라클함수
+1. 문자 처리 함수 <br>
+LENGTH, LENGTHB, INSTR(@의 위치 알려줌), SUBSTR(문자 자름), <br>
+LPAD, RPAD(길이정하고 나머지 채워줌), LTRIM, RTRIM, TRIM(공백제거) <br>
+CONCAT, || ,LOWER ,UPPER ,INITCAP</p>
+<p>2. 숫자처리함수 <br>
+-- - ABS, MOD, ROUND, FLOOR , TRUNC , CEIL, ...</p>
+<p>3.날짜처리함수 <br>
+SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
+<p>실습문제풀이</p>
 
 
