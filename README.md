@@ -165,5 +165,15 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>집합연산자</p>
 <p>JOIN</p>
 
+<h2>0616</h2>
+<p>SQL JOIN 실습</p>
+<p>서브쿼리</p>
+
+
+
+
+
+
+
 
 
