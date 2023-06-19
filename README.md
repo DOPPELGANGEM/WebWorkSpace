@@ -167,7 +167,32 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 
 <h2>0616</h2>
 <p>SQL JOIN 실습</p>
-<p>서브쿼리</p>
+<p>일반서브쿼리,상관서브쿼리</p>
+
+<h2>0619</h2>
+<p>스칼라 서브쿼리</p>
+<p>ORACLE 객체</p>
+<p>오라클 객체(VIEW, SEQUENCE)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
