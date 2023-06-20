@@ -174,6 +174,15 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>ORACLE 객체</p>
 <p>오라클 객체(VIEW, SEQUENCE)</p>
 
+<h2>0620</h2>
+<p>ORACLE 객체</p>
+<p>ROLE, INDEX</p>
+<p>PL/SQL</p>
+
+
+
+
+
 
 
 
