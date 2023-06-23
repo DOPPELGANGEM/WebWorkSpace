@@ -192,7 +192,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>계층형 쿼리</p>
 <p>윈도우 함수</p>
 
-
+<h2>0623</h2>
+<p>SQL시험</p>
+<p>SQL 서술형시험</p>
 
 
 
