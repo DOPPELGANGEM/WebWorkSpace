@@ -1,7 +1,7 @@
-# WebWorkSpace (강의자료)
+# WebWorkSpace (강의일정자료 정리)
 
-<h2>0515</h2>
-<p>1. 웹문서 만들기, index.html(<html>,...)</p>
+<h2>0515 - (FRONT_END START)</h2>
+<p>1. 웹문서 만들기, index.html(...)</p>
 <p>2. 브라우저로 실행하기</p>
 <p>3. VScode 설치(Live Server), 웹서버로 실행하기</p>
 <p>4. 글자관련태그, 목록관련태그</p>
@@ -25,7 +25,7 @@
 <p>5. 문자열 속성 선택자([속성(?)=속성값]), ? -> ^,$,|,~,*, ....</p>
 <p>6. 자손 선택자 (>)</p>
 <p>
-  7. 후손 선택자 () ex. div h1
+  1. 후손 선택자 () ex. div h1
   -- 형제, 자매 관계, 같은 레벨의 요소들
 </p>
 <p>8. 동위 선택자 (기준값~ 선택할 값, 기준값+선택할 값)</p>
@@ -130,11 +130,11 @@
 <p>jquery Descendants 메소드</p>
 <p>jquery Siblings 메소드</p>
 
-<h2>0609</h2>
+<h2>0609 - (FRONT_END END)</h2>
 <p>jquery 실습문제</p>
 <p>1개월차 개인면담</p>
 
-<h2>0612</h2>
+<h2>0612 - (ORALCE_START)</h2>
 <p>Oracle DB</p>
 <p>Insert Delete Update</p>
 <p>DDL(Data Definition Language) NOT NULL,UNIQUE, PRIMARY_KEY, FOREIGN KEY, CHECK</p>
@@ -192,12 +192,15 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>계층형 쿼리</p>
 <p>윈도우 함수</p>
 
-<h2>0623</h2>
+<h2>0623 - (ORALCE_END)</h2>
 <p>SQL시험</p>
 <p>SQL 서술형시험</p>
 
-
-
+<h2>0626 - (JAVA_START)</h2>
+<p>JAVA - 기본세팅(Eclipse)</p>
+<p>JAVA - 데이터타입(Data Type)</p>
+<p>JAVA - Input(Scanner)</p>
+<p>JAVA - 연산자</p>
 
 
 
