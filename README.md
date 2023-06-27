@@ -202,8 +202,11 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - Input(Scanner)</p>
 <p>JAVA - 연산자</p>
 
-
-
+<h2>0627</h2>
+<p>JAVA - GITHUB 연동</p>
+<p>JAVA - 비교연산자,논리연산자</p>
+<p>JAVA - 반복문,조건문</p>
+<p>JAVA - Random 함수와 실습</p>
 
 
 
