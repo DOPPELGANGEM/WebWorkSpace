@@ -210,17 +210,18 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 
 <h2>0628</h2>
 <p>JAVA - 배열</p>
-<p>정렬알고리즘 - 삽입정렬,선택정렬,버블정렬</p>
-<p>배열문제풀기</p>
+<p>JAVA - 정렬알고리즘 - 삽입정렬,선택정렬,버블정렬</p>
+<p>JAVA - 배열문제풀기</p>
 
 <h2>0629</h2>
 <p>JAVA - 2차원배열</p>
 <p>JAVA - 예외처리</p>
 <p>JAVA - 배열실습문제</p>
 
-
-
-
+<h2>0630</h2>
+<p>JAVA - 클래스와 객체</p>
+<p>JAVA - 생성자</p>
+<p>JAVA - 접근제한자(접근지정자)</p>
 
 
 
