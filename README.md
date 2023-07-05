@@ -232,3 +232,10 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - 상속(super)</p>
 <p>JAVA - 다형성</p>
 <p>JAVA - 메소드 오버라이딩(동적바인딩)</p>
+
+<h2>0705</h2>
+<p>JAVA - 추상메서드</p>
+<p>JAVA - 추상메서드실습</p>
+<p>JAVA - 인터페이스</p>
+<p>JAVA - 인터페이스실습</p>
+
