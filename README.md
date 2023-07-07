@@ -243,3 +243,7 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - Obj Package</p>
 <p>JAVA - Obj(equals, wrapper)</p>
 <p>JAVA - Java API(Date, String, StringBuffer, StringTokenizer)</p>
+
+<h2>0707</h2>
+<p>JAVA - Collection(List,set,Map)</p>
+<p>JAVA - Collection(List,set,Map) - 실습문제</p>
