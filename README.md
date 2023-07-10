@@ -247,3 +247,8 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <h2>0707</h2>
 <p>JAVA - Collection(List,set,Map)</p>
 <p>JAVA - Collection(List,set,Map) - 실습문제</p>
+
+<h2>0710</h2>
+<p>JAVA - 입출력(I/O)</p>
+<p>JAVA - IOPackage</p>
+<p>JAVA - InputStream, OutputStream, FileInputStream..</p>
