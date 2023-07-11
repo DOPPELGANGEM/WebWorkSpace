@@ -252,3 +252,15 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - 입출력(I/O)</p>
 <p>JAVA - IOPackage</p>
 <p>JAVA - InputStream, OutputStream, FileInputStream..</p>
+
+<h2>0711</h2>
+<p>JAVA - MVC 패턴 맛보기</p>
+<p>JAVA - 정렬알고리즘(insert, sort, bubble)</p>
+
+
+
+
+
+
+
+
