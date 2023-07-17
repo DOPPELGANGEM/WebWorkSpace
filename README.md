@@ -273,7 +273,11 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - 프로그래밍 언어 활용/응용 서술형 시험</p>
 <p>JAVA - Swing 고급 컴포넌트(JMenuBar, JTabbedPane, JToolBar)</p>
 
-
-
+<h2>0717</h2>
+<p>JAVA - JoptionPane 클래스, 자바스크립트의 alert, prompt, confrim과 같이 메시지 출력, 메시지 입력, Yes/No 선택을 할 수 있게함.</p>
+<p>JAVA - JFileChooser 클래스, 첨부파일이 가능하도록 해줌.</p>
+<p>JAVA - JColorChooser 클래스, 색깔이 가능하도록 해줌.</p>
+<p>JAVA - Audio를 출력할 수 있도록 함. => LineListener을 사용해 음악이 끝날때 동작하도록 할 수 있음.</p>
+<p>JAVA - 네트워크프로그래밍</p>
 
 
