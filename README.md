@@ -288,4 +288,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - Mvc모델실습(Member)</p>
 <p>JAVA - run - view - controller - dao 구조를 이용하여 음악관리 프로그램 실습 완료</p>
 
+<h2>0720</h2>
+<p>JAVA - JDBC(Java DataBase Connectivity)</p>
+
+
+
 
