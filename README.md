@@ -290,7 +290,7 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 
 <h2>0720</h2>
 <p>JAVA - JDBC(Java DataBase Connectivity)</p>
-
+<p>JAVA - JDBC 실습</p>
 
 
 
