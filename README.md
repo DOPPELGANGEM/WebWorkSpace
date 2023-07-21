@@ -292,4 +292,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - JDBC(Java DataBase Connectivity)</p>
 <p>JAVA - JDBC 실습</p>
 
+<h2>0721</h2>
+<p>JAVA - JDBC 학생관리프로그램실습 <br> 1.MVC패턴 적용, 아이디로 조회, 이름으로 조회, 학생 정보 수정, 삭제 기능 완료 <br> 2.SELECT - ResultSet, DML - INT <br>3.SELECT - EXECUTEQuery(), DML - EXECUTEUpdate() <br>4.쿼리문을생각해보고 리턴형과 매개변수 유무룰 결정하여 메소드를 작성 <br>5.DAO에 쿼리문 작성시 문자열 오타등 주의하기</p>
+
+
+
 
