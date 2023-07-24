@@ -300,5 +300,22 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>4.쿼리문을생각해보고 리턴형과 매개변수 유무룰 결정하여 메소드를 작성</p>
 <p>5.DAO에 쿼리문 작성시 문자열 오타등 주의하기</p>
 
+<h2>0724</h2>
+<p>JAVA - JDBC 학생관리프로그램복습</p>
+<p>JAVA - Statement , Prepared Statement 적용</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
