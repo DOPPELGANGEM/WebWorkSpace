@@ -304,9 +304,10 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>JAVA - JDBC 학생관리프로그램복습</p>
 <p>JAVA - Statement , Prepared Statement 적용</p>
 
-
-
-
+<h2>0725</h2>
+<p>학생관리프로그램복습 - Prepared Statement</p>
+<p>학생관리프로그램복습 - Prepared Statement -> Singleton 패턴으로 변형</p>
+<p>학생관리프로그램복습 - Service 쪽 만들기</p>
 
 
 
