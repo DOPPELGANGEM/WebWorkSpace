@@ -309,8 +309,12 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>학생관리프로그램복습 - Prepared Statement -> Singleton 패턴으로 변형</p>
 <p>학생관리프로그램복습 - Service 쪽 만들기</p>
 
-
-
+<h2>0726</h2>
+<p>JDBC 시험</p>
+<p>서버 프로그래밍(WAS)</p>
+<p>Apache Tomcat 9.0으로 서버만들기</p>
+<p>Servlet(서블릿)</p>
+<p>JSP(JavaServer Pages)<p>
 
 
 
