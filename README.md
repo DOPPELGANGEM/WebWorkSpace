@@ -316,9 +316,10 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Servlet(서블릿)</p>
 <p>JSP(JavaServer Pages)<p>
 
-
-
-
+<h2>0727</h2>
+<p>서버 프로그래밍 복습</p>
+<p>get방식,post방식</p>
+<p>회원가입프로그램만들기</p>
 
 
 
