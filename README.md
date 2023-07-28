@@ -321,7 +321,7 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>get방식,post방식</p>
 <p>회원가입프로그램만들기</p>
 
-
-
+<h2>0728</h2>
+<p>멤버웹설정 실습</p>
 
 
