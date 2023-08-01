@@ -326,5 +326,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 
 <h2>0731</h2>
 <p>멤버웹 게시판만들어보기</p>
-<p>개인프로젝트실습</p>
+<p>개인프로젝트 실습</p>
+
+<h2>0801</h2>
+<p>게시판 공지사항</p>
+<p>개인프로젝트 실습</p>
 
