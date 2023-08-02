@@ -332,3 +332,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>게시판 공지사항</p>
 <p>개인프로젝트 실습</p>
 
+<h2>0802</h2>
+<p>게시판 공지사항 수정</p>
+<p>게시판 공지사항 삭제</p>
+<p>게시판 페이징처리(어려움..ㅠ)</p>
+<p>개인프로젝트 실습</p>
+
