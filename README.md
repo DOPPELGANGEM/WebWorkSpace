@@ -338,3 +338,11 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>게시판 페이징처리(어려움..ㅠ)</p>
 <p>개인프로젝트 실습</p>
 
+<h2>0803</h2>
+<p>My Batis 실습해보기</p>
+<p>개인프로젝트 실습(My Batis전)</p>
+
+
+
+
+
