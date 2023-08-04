@@ -342,7 +342,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>My Batis 실습해보기</p>
 <p>개인프로젝트 실습(My Batis전)</p>
 
-
-
+<h2>0804</h2>
+<p>My Batis로 마이페이지<p>
+<p>My Batis로 공지사항쪽<p>
+<p>기존프로젝트 My Batis 주말동안바꾸기</p>
 
 
