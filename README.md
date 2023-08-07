@@ -347,4 +347,16 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>My Batis로 공지사항쪽<p>
 <p>기존프로젝트 My Batis 주말동안바꾸기</p>
 
+<h2>0807</h2>
+<p>My Baits 개인프로젝트</p>
+<p>My Baits 페이징처리</p>
+
+
+
+
+
+
+
+
+
 
