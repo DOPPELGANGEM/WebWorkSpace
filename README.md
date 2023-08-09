@@ -356,7 +356,8 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Spring 파일 구조 잡기</p>
 
 <h2>0809</h2>
-<p></p>
+<p>Maven 세팅</p>
+<p>Spring 세팅</p>
 
 
 
