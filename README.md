@@ -359,9 +359,32 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Maven 세팅</p>
 <p>Spring 세팅</p>
 
-
-
-
-
+<h2>0810</h2>
+<p>Spring 동작구조</p>
+<p>Spring IOC,DI <br>
+  -XML <br>
+  -DI의 종류 <br>
+  -setter 메소드 <br>
+  -생성자 이용 <br>
+  -일반메소드 <br>
+</p>
+<p>Annotaion <br>
+  - context추가 (namespace) <br>
+  - context:component-scan 추가
+</p>
+<p>Annotaion의 종류 <br>
+  1. Component <br>
+  2. Autowired(Qualifier) <br>
+  3. Resource <br>
+  4. Value <br>
+</p>
+<p>우리는 혼용방식을 사용 (XML + Annotation)</p>
+<p>
+  ##3. Spring MVC 요청 처리 과정 <br>
+  -> DispatcherServlet -> Handdler Mappng <br>
+  -> DispatcherServlet -> Controller -> 비즈니스로직수행(Mybatis) <br>
+  -> DispatcherServlet -> ViewResolver <br>
+  -> response
+</p>
 
 
