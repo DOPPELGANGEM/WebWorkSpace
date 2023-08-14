@@ -390,3 +390,6 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <h2>0810</h2>
 <p>Spring 멤버쪽실습</p>
 
+<h2>0814</h2>
+<p>Spring 마이페이지 회원정보수정</p>
+<p>Spring 개인프로젝트 적용</p>
