@@ -399,6 +399,10 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>KH 1차 취업특강</p>
 <p>Spring 회원가입</p>
 
-
+<h2>0817</h2>
+<p>Spring Member 마이페이지 개인정보수정 회원탈퇴</p>
+<p>Spring Notice 기능구현</p>
+<p>Spring Notice 파일업로드</p>
+<p>Spring Notice 리스트 공지사항</p>
 
 
