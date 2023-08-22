@@ -413,7 +413,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>부트스트랩</p>
 <p>개인프로젝트 Spring</p>
 
-
+<h2>0821</h2>
+<p>부트스트랩 반응형</p>
+<p>개인프로젝트 Spring</p>
 
 
 
