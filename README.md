@@ -436,8 +436,12 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Spring 개인프로젝트</p>
 <p>ERD CLOUD 개념적모델링</p>
 
-
-
+<h2>0829</h2>
+<p>Spring 게시판 수정</p>
+<p>Spring 게시판 삭제</p>
+<p>Spring 댓글 수정</p>
+<p>Spring 댓글 삭제</p>
+<p>논리적 모델링</p>
 
 
 
