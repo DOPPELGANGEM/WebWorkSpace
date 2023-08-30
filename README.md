@@ -443,5 +443,6 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Spring 댓글 삭제</p>
 <p>논리적 모델링</p>
 
-
-
+<h2>0830</h2>
+<p>UML 다이어그램</p>
+<p>클래스 다이어그램</p>
