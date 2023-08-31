@@ -446,3 +446,7 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <h2>0830</h2>
 <p>UML 다이어그램</p>
 <p>클래스 다이어그램</p>
+
+<h2>0831</h2>
+<p>시퀀스 다이어그램</p>
+<p>세미프로젝트 설명</p>
