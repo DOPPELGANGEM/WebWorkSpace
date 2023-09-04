@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Basic</title>
+  </head>
+  <body>
+    <h1>ES6에서는..?</h1>
+    <h2>ES6에 추가된 내용들</h2>
+    <p>
+      Binary and Octal Literals, Template Strings,
+      let + const, Default + Rest + Spread, 
+      Arrow and Lexical This, Classes, 
+      Enhanced Object Literals Destructuring,
+      Iterators + For... Of, Generators, Comprehensions,
+      Unicode, Modules, Module Loaders,
+      Map + Set + WeakMap + WeakSet,
+      Proxies, Symbols, Subclassable Built-ins,
+      Math + Number + String + Objects Apis,
+      Promises, Reflect Api, Tail Calls
+    </p>
+    <h2>공부할 내용들</h2>
+    <p>
+      1.값, 변수, 컬렉션 <br>
+      - let, const <br>
+      - Template Strings<br>
+      - 향상된 JSON 표현식<br>
+      - 객체 비구조화<br>
+      - 배열 비구조화<br>
+      - Set<br>
+      - Map<br>
+      2.제어구조 <br>
+      - Rest Parameters <br>
+      - Spread Operator <br>
+      3.함수 <br>
+      - Arrow Function <br>
+      4.객체지향<br>
+      - Class <br>
+    </p>
+    <script>
+      // Template String
+      let content = "ES6:ECMA 2015";
+      let display = "템플릿 스트링 굳!";
+      let template = "<main><div></div><p></p></main>";
+      template = "<main> \
+                  <div></div> \
+                  <p></p> \
+                  </main>";
+      // 백틱(1옆에 \안써도 오류안나게함)
+      template = `<main> 
+                    <div>`+content+`</div> 
+                    <p>`+display+`</p> 
+                  </main>`;
+      template = `<main> 
+        <div>${content}</div> 
+        <p>${display}</p> 
+      </main>`;                  
+      console.log(template);            
+
+    </script>
+  </body>
+</html>
