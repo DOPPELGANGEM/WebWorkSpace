@@ -457,3 +457,7 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <h2>0904</h2>
 <p>React</p>
 
+<h2>0905</h2>
+<p>Rest Parameters</p>
+<p>Spread Operator</p>
+<p>Arrow Function</p>
