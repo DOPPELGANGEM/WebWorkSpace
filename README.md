@@ -461,3 +461,9 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <p>Rest Parameters</p>
 <p>Spread Operator</p>
 <p>Arrow Function</p>
+
+<h2>0906</h2>
+<p>JS Class</p>
+<p>JS Static</p>
+<p>JS Getter/Setter</p>
+<p>React</p>

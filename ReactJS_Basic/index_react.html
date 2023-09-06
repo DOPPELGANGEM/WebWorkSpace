@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 카운터</title>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <span>Total clicks : 0</span> -->
+    <!-- <button id="click-btn">Click me</button> -->
+    <script>
+      let counter = 0;
+      const root = document.querySelector('#root');
+      let span = React.createElement("span"
+                                      , {}
+                                      , "Total clicks : 0");
+      const btn = React.createElement("button"
+                                      , {
+                                          onClick : () => {
+                                            counter++;
+                                            span = React.createElement("span", null, `Total clicks: ${counter }`);
+                                            ReactDOM.render([span, btn], root);
+                                          },
+                                          style : { backgroundColor:"gold", margin:"5px" }
+                                        }
+                                      , "Click me");
+      const container = React.createElement("div", null, [span, btn]);
+      ReactDOM.render(container, root);
+
+      /* let counter = 0;
+      const span = document.querySelector("span");
+      const clickHandler = () => {
+        counter++;
+        // span.innerText = `Total clicks :  "+counter;;
+        span.innerText = `Total clicks :  ${counter}`;
+      }
+      document.querySelector("#click-btn")
+      // .addEventListener("click", function(){})
+      .addEventListener("click", clickHandler); */
+        
+  
+    </script>
+  </body>
+</html>
