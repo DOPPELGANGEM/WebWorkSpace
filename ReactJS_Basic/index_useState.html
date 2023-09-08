@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 카운터</title>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+     <!--  <h1>Total Clicks : 0</h1> -->
+    </div>
+    <script type="text/babel">
+      const root = document.querySelector("#root");
+      // h1, button
+      // "Total Clicks : "+ counter +""
+      // let counter = 0;
+      // function countUp(){
+      //   counter++;
+      // }
+
+      function App(){
+        // const data = React.useState(0);
+        // console.log(data);
+        const value = 0;
+        const [counter, setCounter] = React.useState(0);
+        const [status, setStatus] = React.useState("OPEN");
+        const handlerClick = () => {
+          setCounter(counter+1);
+        }
+        const handlerChange = () => {
+          setStatus("CLOSE");
+        }
+        return (
+          <div>
+            <h1>Total Clicks : {counter}</h1>
+            <button onClick={ handlerClick }>Click Me</button><br/>
+            <h2>State : {status}</h2>
+            <button onClick={ handlerChange }>Change Text</button>
+          </div>
+        )
+      }
+
+      function render(){
+        ReactDOM.render(<App/>, root);
+      }
+      
+      render();
+
+
+      // function Hone(){
+      //   return (
+      //     <h1>Total Clicks : {counter}</h1>
+      //   )
+      // }
+
+      // function Btn(){
+      //   return (
+      //     //<button onClick={() => {counter++; render();}}>Click Me</button>
+      //     <button onClick={countUp}>Click Me</button>
+      //   )
+      // }
+      // function Container(){
+      //   return (
+      //     <div>
+      //       <Hone />
+      //       <Btn />
+      //     </div>
+      //   )
+      // }
+
+      // function render(){
+      //   ReactDOM.render(<Container/>, root);
+      // }
+      // function countUp(){
+      //   counter++; 
+      //   render();
+      // }
+      // render();
+        
+  
+    </script>
+  </body>
+</html>

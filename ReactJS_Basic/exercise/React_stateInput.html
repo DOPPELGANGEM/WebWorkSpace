@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const root = document.querySelector("#root");
+      function App(){
+        const [minutes, setMinutes] = React.useState(0);
+        const [hours, setHours] = React.useState(0);
+        const [isAble, setIsAble] = React.useState(false); 
+
+        const handlerMinClick = () => {
+          setHours(Math.floor(minutes/60));
+        }
+        const handlerHourClick = () => {
+          setMinutes(Math.floor(hours*60));
+        }
+        const reset = () => {
+          setMinutes(0);
+          setHours(0);
+        }
+        const flip = () => {
+          setIsAble(!isAble);
+        }
+        const onMinutesChange = (event) => {
+          // event.target은 input태그
+          // 100을 입력하는 것은 input태그에
+          // change 이벤트 발생 onChange로 바인딩
+          // setMinutes로 minutes값을 변경
+          // 내가 입력한 값으로 변경하기 위해 event.target.value 사용
+          const minValue = event.target.value;
+          setMinutes(minValue);
+          setHours(Math.round(minutes/60));
+        }
+        const onHoursChange = (event) => {
+          const hValue = event.target.value;
+          setHours(hValue);
+          setMinutes(Math.floor(hours*60));
+        }
+        //const isAble = false;
+        return (
+            // strict 모드로 동작중
+            <div>
+              <h1>Minutes to Hours</h1>
+              <label for="minutes">Minutes</label>
+              <input id="minutes" type="number" 
+                     placeholder="분을 입력하세요"  
+                     onChange = {onMinutesChange}
+                     value={minutes}
+                     disabled={isAble}
+              />
+              <br/>
+              <label for="minutes">Hours</label>
+              <input id="minutes" type="number" placeholder="시간을 입력하세요"  onChange = {onHoursChange} value={hours} disabled={!isAble}/>
+              <br/>
+              <button onClick={reset}>리셋</button>
+              <button onClick={flip}>전환</button>
+              <h1>Killometers to Miles</h1>
+              <label>Killometers</label>
+              <input type="number"/><br />
+              <label>Miles</label>
+              <input type="number"/><br />
+              <button>리셋</button>
+              <button>전환</button>
+            </div>
+            
+        )
+      }
+      /* <button onClick={ handlerMinClick }>Min을 Hour 변환</button><br/>
+        <button onClick={ handlerHourClick }>Hour을 Min 변환</button> */
+      ReactDOM.render(<App />, root);
+    </script>
+  </body>
+</html>
