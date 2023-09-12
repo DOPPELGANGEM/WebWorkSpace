@@ -21,20 +21,23 @@
         )
       }
 
-      function Btn(props){
+      function Btn({name, changeValue, color}){
+        console.log(`${name} was rendered`)
         return(
           <button 
-            onClick={props.changeValue}
+            onClick={changeValue}
             style={{
-              backgroundColor : `${props.color}`,
+              backgroundColor : `${color}`,
               color : "black",
               padding : "10px 20px",
               margin : "5px",
               borderRadius:10
             }}
-            >{props.name}, {props.color}</button>
+            >{name}</button>
         )
       }
+
+      const MemoBtn = React.memo(Btn);
 
       function App(){
         const [text, setText] = React.useState("Save");
@@ -42,10 +45,10 @@
         return (
           <div>
             <H1 />
-            <Btn name={text} changeValue={changeValue} color="pink" />
-            <Btn name="Update" color="gold"/>
-            <Btn name="Delete" color="blue"/>
-            <Btn name="Submit" color="yellowgreen"/>
+            <MemoBtn name={text} changeValue={changeValue} color="pink" />
+            <MemoBtn name="Update" color="gold"/>
+            <MemoBtn name="Delete" color="blue"/>
+            <MemoBtn name="Submit" color="yellowgreen"/>
           </div>
         )
       }

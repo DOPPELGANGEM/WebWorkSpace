@@ -479,3 +479,8 @@ SYSDATYE , ADDMONTHS, MONTHS_BETWENN, LAST_DAY, NEXT_DAY, EXTRACT(||)</p>
 <h2>0911</h2>
 <p>세미프로젝트</p>
 <p>React</p>
+
+<h2>0912</h2>
+<p>세미프로젝트</p>
+<p>React</p>
+<p>Node js</p>
